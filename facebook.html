@@ -12,6 +12,9 @@ FB.init({
 	
 },{redirect_uri:'facebook.html'});
 
+FB( "facebook" ).login( function(){
+	alert("You are signed in to Facebook");
+});
 
 FB.on('auth.login', function(auth){
 	
